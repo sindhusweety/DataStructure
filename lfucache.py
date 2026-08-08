@@ -68,7 +68,7 @@ class DoublyLinkedList:
     def traversed(self):
         
         current = self.head.next
-        while current.key >0:
+        while current != self.tail:
             print(
             f"Key={current.key}, "
             f"Value={current.value}, "
