@@ -5,11 +5,13 @@ put - retrive (cache)
 put - 1, 7 (cache{1: 7})
 put 2, 8 cache {1: 7, 2: 8}
 
-get 1 -> 7 otherwise -1  count become +1
+get 1 -> 7  frequency  +1; otherwise -1 
 
 put 3, 9 - > exceeded the limit of size ,
-eliminating least frequently
-used which is 2 as per count
+eliminate least frequently used 
+in which 2 is lfu 
+
+Here, the goal is to obtain O(1) 
 """
 
 
